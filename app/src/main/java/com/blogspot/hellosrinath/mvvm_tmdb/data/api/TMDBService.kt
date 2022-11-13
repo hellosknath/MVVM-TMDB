@@ -1,8 +1,8 @@
 package com.blogspot.hellosrinath.mvvm_tmdb.data.api
 
-import com.blogspot.hellosrinath.mvvm_tmdb.data.ArtistList
-import com.blogspot.hellosrinath.mvvm_tmdb.data.MovieList
-import com.blogspot.hellosrinath.mvvm_tmdb.data.TvShowList
+import com.blogspot.hellosrinath.mvvm_tmdb.data.model.artist.ArtistList
+import com.blogspot.hellosrinath.mvvm_tmdb.data.model.movie.MovieList
+import com.blogspot.hellosrinath.mvvm_tmdb.data.model.tvshow.TvShowList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

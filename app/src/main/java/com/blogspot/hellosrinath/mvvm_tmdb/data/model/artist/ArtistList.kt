@@ -1,4 +1,4 @@
-package com.blogspot.hellosrinath.mvvm_tmdb.data
+package com.blogspot.hellosrinath.mvvm_tmdb.data.model.artist
 
 
 import com.google.gson.annotations.SerializedName
