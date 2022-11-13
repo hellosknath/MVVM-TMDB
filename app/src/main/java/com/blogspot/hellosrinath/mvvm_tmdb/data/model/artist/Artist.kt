@@ -1,8 +1,7 @@
 package com.blogspot.hellosrinath.mvvm_tmdb.data.model.artist
 
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import androidx.room.*
 import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "popular_artists")

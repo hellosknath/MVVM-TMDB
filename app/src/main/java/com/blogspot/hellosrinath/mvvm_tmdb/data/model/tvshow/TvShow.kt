@@ -1,8 +1,6 @@
 package com.blogspot.hellosrinath.mvvm_tmdb.data.model.tvshow
 
-
-import androidx.room.Entity
-import androidx.room.PrimaryKey
+import androidx.room.*
 import com.google.gson.annotations.SerializedName
 
 @Entity(tableName = "popular_tvShows")

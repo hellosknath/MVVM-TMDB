@@ -1,7 +1,6 @@
 package com.blogspot.hellosrinath.mvvm_tmdb.data.db
 
-import androidx.room.Database
-import androidx.room.RoomDatabase
+import androidx.room.*
 import com.blogspot.hellosrinath.mvvm_tmdb.data.model.artist.Artist
 import com.blogspot.hellosrinath.mvvm_tmdb.data.model.movie.Movie
 import com.blogspot.hellosrinath.mvvm_tmdb.data.model.tvshow.TvShow

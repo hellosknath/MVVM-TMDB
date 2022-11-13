@@ -1,10 +1,6 @@
 package com.blogspot.hellosrinath.mvvm_tmdb.data.db
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import com.blogspot.hellosrinath.mvvm_tmdb.data.model.movie.Movie
+import androidx.room.*
 import com.blogspot.hellosrinath.mvvm_tmdb.data.model.tvshow.TvShow
 
 @Dao
