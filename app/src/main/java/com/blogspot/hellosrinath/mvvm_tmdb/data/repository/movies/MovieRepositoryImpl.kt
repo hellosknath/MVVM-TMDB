@@ -1,11 +1,8 @@
 package com.blogspot.hellosrinath.mvvm_tmdb.data.repository.movies
 
 import android.util.Log
-import com.blogspot.hellosrinath.mvvm_tmdb.data.model.movie.Movie
-import com.blogspot.hellosrinath.mvvm_tmdb.data.model.movie.MovieList
-import com.blogspot.hellosrinath.mvvm_tmdb.data.repository.movies.datasource.MovieLocalDataSource
-import com.blogspot.hellosrinath.mvvm_tmdb.data.repository.movies.datasource.MovieRemoteDataSource
-import com.blogspot.hellosrinath.mvvm_tmdb.data.repository.movies.datasource.MoviesCacheDataSource
+import com.blogspot.hellosrinath.mvvm_tmdb.data.model.movie.*
+import com.blogspot.hellosrinath.mvvm_tmdb.data.repository.movies.datasource.*
 import com.blogspot.hellosrinath.mvvm_tmdb.domain.repository.MovieRepository
 import retrofit2.Response
 
@@ -16,11 +13,11 @@ class MovieRepositoryImpl(
 ) : MovieRepository {
     private val TAG = "MovieRepositoryImpl"
 
-    override suspend fun getMovies(): List<Movie>? {
+    override suspend fun getMovies(): List<Movie> {
         return getMoviesFromCache()
     }
 
-    override suspend fun updateMovies(): List<Movie>? {
+    override suspend fun updateMovies(): List<Movie> {
         val newListOfMovies: List<Movie> = getMoviesFromAPI()
         movieLocalDataSource.clearAll()
         movieLocalDataSource.saveMoviesToDb(newListOfMovies)
