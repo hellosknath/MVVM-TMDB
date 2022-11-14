@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".presentation.HomeActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/movie_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_rounded"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Movies"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/artist_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_rounded"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Artist"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tvshow_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_rounded"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Tv Show"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
