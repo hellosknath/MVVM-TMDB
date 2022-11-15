@@ -1,7 +1,6 @@
 package com.blogspot.hellosrinath.mvvm_tmdb.data.repository.tvshow
 
 import android.util.Log
-import com.blogspot.hellosrinath.mvvm_tmdb.data.model.movie.MovieList
 import com.blogspot.hellosrinath.mvvm_tmdb.data.model.tvshow.TvShow
 import com.blogspot.hellosrinath.mvvm_tmdb.data.model.tvshow.TvShowList
 import com.blogspot.hellosrinath.mvvm_tmdb.data.repository.tvshow.datasource.TvShowCacheDataSource

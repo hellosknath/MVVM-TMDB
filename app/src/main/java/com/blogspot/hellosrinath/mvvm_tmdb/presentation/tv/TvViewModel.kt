@@ -2,8 +2,7 @@ package com.blogspot.hellosrinath.mvvm_tmdb.presentation.tv
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
-import com.blogspot.hellosrinath.mvvm_tmdb.domain.usecase.GetTvShowUseCase
-import com.blogspot.hellosrinath.mvvm_tmdb.domain.usecase.UpdateTvShowUseCase
+import com.blogspot.hellosrinath.mvvm_tmdb.domain.usecase.*
 
 class TvViewModel(
     private val getTvShowUseCase: GetTvShowUseCase,
@@ -19,5 +18,4 @@ class TvViewModel(
         val tvShowList = updateTvShowUseCase.execute()
         emit(tvShowList)
     }
-
 }
