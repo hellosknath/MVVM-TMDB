@@ -15,7 +15,7 @@ class ArtistRepositoryImpl(
 
     override suspend fun getArtist(): List<Artist> = getArtistFromCache()
 
-    override suspend fun updateArtist(): List<Artist>? {
+    override suspend fun updateArtist(): List<Artist> {
         val newArtistList: List<Artist> = getArtistFromAPI()
         artistLocalDatasource.clearAll()
         artistLocalDatasource.saveArtistToLocalDb(newArtistList)
